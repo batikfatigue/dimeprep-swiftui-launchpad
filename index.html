@@ -1,24 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dimeprep-swiftui-launchpad</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="dimeprep-swiftui-launchpad" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>DimePrep - CSV Formatter</title>
+    <meta name="description" content="Format bank CSV statements for Dime import" />
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14,2 14,8 20,8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10,9 9,9 8,9"/>
+            </svg>
+          </div>
+          <h1>DimePrep</h1>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <div class="hero">
+          <div class="badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+            Must-Have Finance Tool
+          </div>
+          
+          <h2 class="hero-title">
+            Simple, intuitive
+            <span class="highlight">CSV formatting</span>
+          </h2>
+          
+          <p class="hero-description">
+            Transform your bank CSV statements into Dime-ready formats. 
+            Clean, accurate, and effortless financial data preparation.
+          </p>
+
+          <button class="cta-button" onclick="startFormatting()">
+            Start formatting!
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features">
+          <div class="feature-card">
+            <div class="feature-icon green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </div>
+            <h3>Instant Processing</h3>
+            <p>Upload your bank CSV and get a Dime-ready file in seconds. No waiting, no hassle.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Secure & Private</h3>
+            <p>Your financial data stays private. All processing happens locally in your browser.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h3>Perfect Formatting</h3>
+            <p>Automatically formats columns, dates, and amounts to match Dime's requirements.</p>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="final-cta">
+          <h3>Ready to streamline your finances?</h3>
+          <p>Join thousands of users who trust DimePrep to prepare their financial data with precision and ease.</p>
+          <button class="cta-button secondary" onclick="startFormatting()">
+            Get Started Now
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
